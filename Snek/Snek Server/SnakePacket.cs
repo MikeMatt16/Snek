@@ -2,6 +2,36 @@
 
 namespace Snek_Server
 {
+    public class GameStatePacket : SnakePacket
+    {
+        public GameStatePacket()
+        {
+
+        }
+    }
+
+    public class MovementPacket : SnakePacket
+    {
+        public PlayerDesignation Player
+        {
+            get { return (PlayerDesignation)(data & 0xf); }
+            set
+            {
+
+            }
+        }
+        public Direction Direction
+        {
+            get { return (Direction)((data & 0xf0) >> 4); }
+            set
+            {
+
+            }
+        }
+        
+        private byte data;
+    }
+
     /// <summary>
     /// Represents a basic snake packet.
     /// </summary>
@@ -11,6 +41,10 @@ namespace Snek_Server
         /// Represents the minimum length of a snake packet.
         /// </summary>
         public const int MinimumLength = 3;
+        /// <summary>
+        /// Represents the maximum length of a snake packet;
+        /// </summary>
+        public const int MaximumLength = 2051;  //15 bpt * 32 rows * 32 columns / 8 bits per byte = 2048 bytes + 3 byte base packet
         /// <summary>
         /// Gets or sets the packet type.
         /// </summary>
@@ -63,6 +97,24 @@ namespace Snek_Server
         }
     }
 
+    [Flags]
+    public enum Direction : byte
+    {
+        None = 0,
+        Up = 0x1,
+        Down = 0x2,
+        Left = 0x4,
+        Right = 0x8
+    };
+
+    public enum PlayerDesignation : byte
+    {
+        Player1 = 0,
+        Player2 = 1,
+        Player3 = 2,
+        Player4 = 3,
+    };
+
     /// <summary>
     /// Represents an enumeration containing possible packet types.
     /// </summary>
@@ -71,5 +123,9 @@ namespace Snek_Server
         None = 0,
         Ping = 1,
         Connect = 2,
-    }
+        Quit = 3,
+
+        TileUpdate = 4,
+        GameUpdate = 5
+    };
 }

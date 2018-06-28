@@ -10,6 +10,26 @@ namespace Snek_Server
     {
         static void Main(string[] args)
         {
+            //Welcome
+            Console.WriteLine("Welcome to Snek server");
+
+            //Begin
+            Server.Start(25565);
+
+            //Loop
+            while(Server.IsRunning)
+            {
+                string input = Console.ReadLine().Trim();
+
+                //Handle
+                if (!string.IsNullOrEmpty(input))
+                    HandleInput(input);
+            }
+        }
+
+        private static void HandleInput(string input)
+        {
+
         }
     }
 }
