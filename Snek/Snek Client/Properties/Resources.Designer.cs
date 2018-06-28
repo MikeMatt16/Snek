@@ -73,9 +73,29 @@ namespace Snek_Client.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cancel_Icon_Small {
+            get {
+                object obj = ResourceManager.GetObject("Cancel-Icon-Small", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap User_Add_Icon {
             get {
                 object obj = ResourceManager.GetObject("User-Add-Icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap User_Add_Icon_Small {
+            get {
+                object obj = ResourceManager.GetObject("User-Add-Icon-Small", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

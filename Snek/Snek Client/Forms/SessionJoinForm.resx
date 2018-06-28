@@ -118,20 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAdNJREFUWEfdlitSA0EQhldwBAQSiUAgEAgEAolERCA4AALBAfARHIFjcBwkEhER
-        kaqErzv/LjOZmWI2uwkUX1XXPPrvxy6TZZrlcnm6Wq2e+xpxF80YkOiDhL0hbq4Uw1A+I/ukBXOUYhjK
-        1SuZQn6/Aci9nZxdKTQFp6NlFQqphvOyYDhUeMxasrs3QPFPRuNY4TFy7uwM0MC75H+8Aci+woI5SpGA
-        60jTpAHGzucEf6NeELdQigj2b7G5jVp3DWCXrGfYo4sNNq+x5CkRvWH2lUx8Zvi8wCaWHL83aBrMG2C8
-        w2aav0ieB413WiXOQEzYxLyda6wv3vJjUAZivImQmuIHiJ4Yc6/9RLJqwia2eYhRoPAEe9CyHpo+I/Bc
-        y/1CYTu9doD8JGu7CJrxLjVW0AojcGxue3JnwT/OpcYKWUH5O2zPfJIlSGZkn7RgjlLExRnD0xt9WCSP
-        cCFoWYVCogamtmEFbe1ekK9tYmrrTVwIWlahkDiGdXdzWbu/BUyLt5q1coQGQuSvSirpP20A7ivMUWgV
-        CinHcOD8v1hPcj+3kjkql0ID9g1/rbRtmvWftsoNg0Q35Euekv2tLjWjQIFBl5pBhMVb9tYEtXpcaprm
-        C+JkNB698N3tAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -150,6 +136,20 @@
         2F5uXgLbkbuTgUZXq15Cv9Gvy0Z/ettlAV3fkgD6KuoY5KeZfxPKA4Haolyg25aebidYnoFPq7H45ARp
         RYpeRrqGYxXPeATf/oVELtXIKSz0tEOnN2u9qFY9xfuApGsk7dDqw3QIdYmJ+kiVTfXyuk+xf49S6Qm4
         8EdOMIOYkwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAdNJREFUWEfdlitSA0EQhldwBAQSiUAgEAgEAolERCA4AALBAfARHIFjcBwkEhER
+        kaqErzv/LjOZmWI2uwkUX1XXPPrvxy6TZZrlcnm6Wq2e+xpxF80YkOiDhL0hbq4Uw1A+I/ukBXOUYhjK
+        1SuZQn6/Aci9nZxdKTQFp6NlFQqphvOyYDhUeMxasrs3QPFPRuNY4TFy7uwM0MC75H+8Aci+woI5SpGA
+        60jTpAHGzucEf6NeELdQigj2b7G5jVp3DWCXrGfYo4sNNq+x5CkRvWH2lUx8Zvi8wCaWHL83aBrMG2C8
+        w2aav0ieB413WiXOQEzYxLyda6wv3vJjUAZivImQmuIHiJ4Yc6/9RLJqwia2eYhRoPAEe9CyHpo+I/Bc
+        y/1CYTu9doD8JGu7CJrxLjVW0AojcGxue3JnwT/OpcYKWUH5O2zPfJIlSGZkn7RgjlLExRnD0xt9WCSP
+        cCFoWYVCogamtmEFbe1ekK9tYmrrTVwIWlahkDiGdXdzWbu/BUyLt5q1coQGQuSvSirpP20A7ivMUWgV
+        CinHcOD8v1hPcj+3kjkql0ID9g1/rbRtmvWftsoNg0Q35Euekv2tLjWjQIFBl5pBhMVb9tYEtXpcaprm
+        C+JkNB698N3tAAAAAElFTkSuQmCC
 </value>
   </data>
 </root>

@@ -45,11 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\AliasSetupForm.cs">
+    <Compile Include="Forms\UserLoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AliasSetupForm.Designer.cs">
-      <DependentUpon>AliasSetupForm.cs</DependentUpon>
+    <Compile Include="Forms\UserLoginForm.Designer.cs">
+      <DependentUpon>UserLoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\SessionJoinForm.cs">
       <SubType>Form</SubType>
@@ -63,16 +63,25 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="PacketTestingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PacketTestingForm.Designer.cs">
+      <DependentUpon>PacketTestingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\AliasSetupForm.resx">
-      <DependentUpon>AliasSetupForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\UserLoginForm.resx">
+      <DependentUpon>UserLoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SessionJoinForm.resx">
       <DependentUpon>SessionJoinForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PacketTestingForm.resx">
+      <DependentUpon>PacketTestingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -102,6 +111,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\User-Add-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel-Icon-Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Add-Icon-Small.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

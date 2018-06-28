@@ -17,7 +17,9 @@ namespace Snek_Client
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Main());
-            Application.Run(new Forms.SessionJoinForm());
+            //Application.Run(new Forms.SessionJoinForm());
+            Application.Run(new Forms.UserLoginForm());
+            //Application.Run(new PacketTestingForm());
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Snek_Client.Forms
 {
-    partial class AliasSetupForm
+    partial class UserLoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -49,25 +49,31 @@
             // 
             // UsernameTextbox
             // 
-            this.UsernameTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(124)))), ((int)(((byte)(178)))));
-            this.UsernameTextbox.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsernameTextbox.ForeColor = System.Drawing.Color.White;
+            this.UsernameTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.UsernameTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.UsernameTextbox.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsernameTextbox.ForeColor = System.Drawing.Color.Black;
             this.UsernameTextbox.Location = new System.Drawing.Point(136, 17);
             this.UsernameTextbox.Name = "UsernameTextbox";
-            this.UsernameTextbox.Size = new System.Drawing.Size(306, 25);
+            this.UsernameTextbox.Size = new System.Drawing.Size(306, 26);
             this.UsernameTextbox.TabIndex = 1;
-            this.UsernameTextbox.Text = "<new user>";
+            this.UsernameTextbox.TextChanged += new System.EventHandler(this.UsernameTextbox_TextChanged);
+            this.UsernameTextbox.Enter += new System.EventHandler(this.UsernameTextbox_Enter);
+            this.UsernameTextbox.Leave += new System.EventHandler(this.UsernameTextbox_Leave);
             // 
             // PasscodeTextbox
             // 
-            this.PasscodeTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(124)))), ((int)(((byte)(178)))));
-            this.PasscodeTextbox.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasscodeTextbox.ForeColor = System.Drawing.Color.White;
+            this.PasscodeTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.PasscodeTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PasscodeTextbox.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasscodeTextbox.ForeColor = System.Drawing.Color.Black;
             this.PasscodeTextbox.Location = new System.Drawing.Point(136, 62);
             this.PasscodeTextbox.Name = "PasscodeTextbox";
-            this.PasscodeTextbox.Size = new System.Drawing.Size(306, 25);
+            this.PasscodeTextbox.Size = new System.Drawing.Size(306, 26);
             this.PasscodeTextbox.TabIndex = 3;
-            this.PasscodeTextbox.Text = "<passcode>";
+            this.PasscodeTextbox.TextChanged += new System.EventHandler(this.PasscodeTextbox_TextChanged);
+            this.PasscodeTextbox.Enter += new System.EventHandler(this.PasscodeTextbox_Enter);
+            this.PasscodeTextbox.Leave += new System.EventHandler(this.PasscodeTextbox_Leave);
             // 
             // PasscodeLabel
             // 
@@ -84,40 +90,42 @@
             // 
             this.CancelSetupButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(20)))), ((int)(((byte)(0)))));
             this.CancelSetupButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CancelSetupButton.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancelSetupButton.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CancelSetupButton.ForeColor = System.Drawing.Color.White;
-            this.CancelSetupButton.Image = global::Snek_Client.Properties.Resources.Cancel_Icon;
-            this.CancelSetupButton.Location = new System.Drawing.Point(136, 97);
+            this.CancelSetupButton.Image = global::Snek_Client.Properties.Resources.Cancel_Icon_Small;
+            this.CancelSetupButton.Location = new System.Drawing.Point(216, 97);
             this.CancelSetupButton.Name = "CancelSetupButton";
-            this.CancelSetupButton.Size = new System.Drawing.Size(150, 51);
+            this.CancelSetupButton.Size = new System.Drawing.Size(110, 34);
             this.CancelSetupButton.TabIndex = 5;
             this.CancelSetupButton.Text = "  Cancel";
             this.CancelSetupButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CancelSetupButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CancelSetupButton.UseVisualStyleBackColor = false;
+            this.CancelSetupButton.Click += new System.EventHandler(this.CancelSetupButton_Click);
             // 
             // LoginButton
             // 
             this.LoginButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(255)))));
             this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LoginButton.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginButton.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginButton.ForeColor = System.Drawing.Color.White;
-            this.LoginButton.Image = global::Snek_Client.Properties.Resources.User_Add_Icon;
-            this.LoginButton.Location = new System.Drawing.Point(292, 97);
+            this.LoginButton.Image = global::Snek_Client.Properties.Resources.User_Add_Icon_Small;
+            this.LoginButton.Location = new System.Drawing.Point(332, 97);
             this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(150, 51);
+            this.LoginButton.Size = new System.Drawing.Size(110, 34);
             this.LoginButton.TabIndex = 4;
             this.LoginButton.Text = "  Login";
             this.LoginButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LoginButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.LoginButton.UseVisualStyleBackColor = false;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // AliasSetupForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(124)))), ((int)(((byte)(178)))));
-            this.ClientSize = new System.Drawing.Size(471, 160);
+            this.ClientSize = new System.Drawing.Size(471, 144);
             this.Controls.Add(this.CancelSetupButton);
             this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.PasscodeTextbox);
@@ -127,7 +135,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "AliasSetupForm";
-            this.Text = "User Creation";
+            this.Text = "Snek - User Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 
