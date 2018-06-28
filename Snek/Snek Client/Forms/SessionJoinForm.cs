@@ -8,13 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Snek_Client
+namespace Snek_Client.Forms
 {
-    public partial class Form1 : Form
+    public partial class SessionJoinForm : Form
     {
-        public Form1()
+        public SessionJoinForm()
         {
             InitializeComponent();
         }
+
+   
     }
 }
